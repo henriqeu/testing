@@ -1,0 +1,14 @@
+<label for="">User</label>
+<input type="text" name="name" [(ngModel)]="user.name"> <br>
+
+
+<label for="">Senha</label>
+<input type="text" [(ngModel)]="user.pass">
+
+<button (click)="login()" >Entrar</button>
+
+<pre>
+  {{ this.user.name }}
+  {{ this.user.pass }}
+</pre>
+

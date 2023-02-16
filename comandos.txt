@@ -1,0 +1,10 @@
+//Gerar modulo de rotas 13/02
+ng generate module app-routing --flat --module=app
+
+//Gerar paginas
+ng g c pages/home
+ng g c pages/about
+ng g c pages/error404
+
+// install npms
+npm i bootstrap
