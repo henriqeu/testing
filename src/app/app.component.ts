@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'Aplicativo de teste';
 
   isLoadingApp = true;
+  isLoadingCatalog = false;
 
   constructor(
     private router: Router,
@@ -21,13 +22,13 @@ export class AppComponent {
 
   toRoute(route:any) {
 
-    if(route === 'catalog' || 'about' || 'login' ) {
+    if(route === 'catalog' ) {
       this.isLoadingApp = false;
     }
 
     if(route === '' ) {
       this.isLoadingApp = true;
+      this.isLoadingCatalog = false;
     }
-
   }
 }

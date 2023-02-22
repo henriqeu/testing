@@ -9,6 +9,7 @@ import { Error404Component } from './pages/error404/error404.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { CatalogComponent } from './pages/catalog/catalog.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CommonModule } from '@angular/common';
     HomeComponent,
     AboutComponent,
     Error404Component,
-    LoginComponent
+    LoginComponent,
+    CatalogComponent,
   ],
   imports: [
     BrowserModule,
